@@ -1,0 +1,8 @@
+[build]
+target = "aarch-unknown-none"
+
+[target.aarch-unknown-none]
+linker = "rust-lld"
+rustflags = [
+  "-C", "link-args=Tlayour.ld"
+]
